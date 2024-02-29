@@ -1,0 +1,116 @@
+/* Logo Styles */
+.logo {
+    float: left;
+    padding: 0;
+    margin: 0; /* Add this line to remove margin */
+    margin-top: -8px; /* Adjust the margin-top value as needed */
+}
+
+.logo img {
+    max-height: 65px;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Louis George Cafe, sans-serif;
+    line-height: 1.7;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+header {
+    background-color: #f2f2f2;
+    color: #000000;
+    padding: 16px 25px;
+    text-align: right;
+}
+
+
+header h1 {
+    margin: 70px;
+    font-size: 110px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #000000; /* titulo de todos os textos */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffe7c0;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item {
+    margin: 0 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item h3 {
+    color: #f1aa10;
+}
+
+.contact-item p {
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

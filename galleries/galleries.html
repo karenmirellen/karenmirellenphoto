@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Photography Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/12062/Desktop/site2/index.html">Home</a></li>
+                    <li><a href="file:///C:/Users/12062/Desktop/site2/galleries/galleries.html">Galleries</a></li>
+                    <li><a href="file:///C:/Users/12062/Desktop/site2/about%20me/aboutme.html#">About</a></li>
+                    <li><a href="file:///C:/Users/12062/Desktop/site2/contact/contact.html">Contact</a></li>
+                    <li><a href="https://www.instagram.com/karenmirellenphoto" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main class="gallery">
+    <div class="container">
+        <h1>Galleries</h1>
+        <div class="gallery-grid">
+            <a href="file:///C:/Users/12062/Desktop/site2/couples%20page/couples.html" class="image">
+                <img src="img/couple.jpg" alt="Couples">
+                <h3>Couples</h3>
+            </a>
+            <a href="file:///C:/Users/12062/Desktop/site2/maternity%20page/maternity.html" class="image">
+                <img src="img/gravida3.png" alt="Maternity">
+                <h3>Maternity</h3>
+            </a>
+            <a href="file:///C:/Users/12062/Desktop/site2/portrait%20page/portrait.html" class="image">
+                <img src="img/keline.png" alt="Portrait">
+                <h3>Portrait</h3>
+            </a>
+            <!-- Adicio more galleries as needed -->
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Karen Photography. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function toggleAnimation(element) {
+        element.classList.toggle('animate');
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+        .image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease; /* Add transition effect */
+        }
+
+        .image h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            margin: 0;
+            transition: opacity 0.3s ease; /* Add transition effect */
+            opacity: 0; /* Initially hidden */
+        }
+
+        .image:hover img {
+            transform: scale(1.1); /* Zoom in on hover */
+        }
+
+        .image:hover h3 {
+            opacity: 1; /* Show caption on hover */
+        }
+
+        /* Define animation */
+        @keyframes animateZoom {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.5);
+            }
+        }
+
+        /* Apply animation when the 'animate' class is toggled */
+        .animate img {
+            animation: animateZoom 0.5s ease forwards;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <!-- Your existing header content -->
+</header>
+
+<footer class="footer">
+    <!-- Your existing footer content -->
+</footer>
+
+<script>
+    function toggleAnimation(element) {
+        element.classList.toggle('animate');
+    }
+</script>
+
+</body>
+</html>
